@@ -88,16 +88,10 @@ img {
     padding: 5rem 0;
 }
 
-@media (min-width: 768px) {
-    .header {
-        padding: 2rem 0;
-    }
-}
-
 .header-content {
     display: flex;
     flex-direction: column;
-    height: calc(60rem -4rem);
+    height: calc(60rem - 4rem);
     justify-content: space-between;
     color: var(--white); 
 }
@@ -124,4 +118,94 @@ img {
         justify-content: space-between;
         align-items: center;
     }
+} 
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.phone::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        align-items: flex-end;
+    }
+}
+
+.header a {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.navegation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media (min-width: 957px) {
+    .navegation {
+        flex-direction: row;
+    }
+}
+
+.navegation a {
+    padding: .5rem;
+    transition: background-color .3s;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navegation a {
+        padding: 1rem 2rem;
+    }
+}
+
+.navegation a:hover {
+    background-color: rgb(255 255 255 / .5);
+    color: var(--black);
+}
+
+.slogan {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        text-align: right;
+    }
+}
+
+.slogan h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .slogan h1 {
+        font-size: 5rem;
+    } 
+}
+
+.slogan p {
+    margin: 0;
+    line-height: 1;
 }
